@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Enquete de Pontuação</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enquete de Pontuação</h1>
+    <p>Por favor, dê uma pontuação de 1 a 10 para este item:</p>
+    <div class="rating">
+        <button class="score-button" data-score="1">1</button>
+        <!-- Outros botões de pontuação -->
+    </div>
+    <p>Sua pontuação: <span id="user-score">N/A</span></p>
+    <canvas id="score-chart" width="400" height="200"></canvas>
+    <button id="reset-button" style="display: none;">Resetar Votação</button>
+    <script src="script.js"></script>
+</body>
+</html>
